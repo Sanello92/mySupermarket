@@ -48,7 +48,7 @@ header {
     box-sizing: border-box;
     border-radius: 4px;
     height: 48px;
-    padding-left: 20px;
+    text-align: center;
 }
 .header-input input::placeholder {
     text-align: center;
@@ -61,7 +61,9 @@ header {
     left: 0;
     right: 0;
 }
-
+.header-input input:focus::placeholder {
+    color: transparent;
+}
 .header-input button {
     position: absolute;
     width: 88px;
@@ -151,7 +153,7 @@ main {
 
 .sort a:hover {
     color: black;
-    border-bottom: 1px solid #4A81EB;
+    border-bottom: 2px solid #4A81EB;
 }
 
 .card-container {
@@ -300,21 +302,21 @@ main {
 }
 
 footer {
-    /* margin-top: 48px; */
     height: 98px;
     color: rgba(51, 51, 51, 0.25);
     font-size: 20px;
     padding: 0 108px;
     background: #F2F2F2;
-    display: flex;
-    align-items: center;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
 }
 .footer-container {
-    max-width: 1140px;
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    padding: 37px 0;
 }
 
 .container {
@@ -336,7 +338,7 @@ footer {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 24px;
+    padding: 24px 24px 21px 24px;
     border: 1px solid #888;
     max-width: 1120px;
     display: flex;
@@ -345,14 +347,16 @@ footer {
 }
 
 .modal-img {
-    width: 53%;
-    background: url(img/big/milk01.png) no-repeat;
-    background-position: contain;
+    width: 52%;
+    background: #EBF5FB;
+    border-radius: 8px;
+    margin-right: 24px;
 }
 
 .modal-text {
-    width: 47%;
+    width: 48%;
     margin: auto;
+    padding-top: 6px;
 }
 
 .modal-text h3 {
@@ -361,7 +365,9 @@ footer {
 }
 
 .modal-text .pints {
-    margin-top: 35px;
+    margin: 0;
+    margin-top: 11px;
+    color: rgba(51, 51, 51, 0.5);
 }
 
 .modal-text button {
@@ -371,7 +377,7 @@ footer {
     border: 1px solid #67C53B;
     box-sizing: border-box;
     border-radius: 100px;
-    margin-top: 32px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -384,6 +390,8 @@ footer {
     color: rgba(51, 51, 51, 0.5);
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    margin-top: 15px;
 }
 
 .price-add {
@@ -391,7 +399,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 52px;
+    margin-top: 50px;
 }
 
 .price-add button {
@@ -411,7 +419,7 @@ footer {
     margin-top: 40px;
     background: #F5F5F5;
     border-radius: 2px;
-    padding: 20px 24px 48px 32px;
+    padding: 16px 24px 48px 32px;
 }
 
 .modal-recycle span {
