@@ -11,17 +11,20 @@
 <body>
     <div class="container">
         <header>
-            <div>
-                <img class="img-logo" src="/img/MySupermarket.svg" alt="">
+            <div class="header-conainer">
+                <div>
+                    <img class="img-logo" src="/img/MySupermarket.svg" alt="">
+                </div>
+                <div class="header-input">
+                    <input type="text" name="" placeholder="Postal Code, e.g. 123456">
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="header-bucket">
+                    <img src="/img/bucket.png" alt="img">
+                    <span>Your cart is empty</span>
+                </div>
             </div>
-            <div class="header-input">
-                <input type="text" name="" placeholder="Postal Code, e.g. 123456">
-                <button type="submit">Submit</button>
-            </div>
-            <div class="header-bucket">
-                <img src="/img/bucket.png" alt="img">
-                <span>Your cart is empty</span>
-            </div>
+            
         </header>
     
             <main>
@@ -39,6 +42,23 @@
                 </div>
 
                 <div class="card-container">
+                    <div class="card card-blue">
+                        <div class="card-title">
+                            <h4 title="Semi Skimmed Low Fat Milk">Semi Skimmed Low Fat Milk</h4>
+                            <p>2,272 L / 4 Pints</p>
+                            <button>
+                                <img src="/img/Vector.png" alt="img">
+                                <span>recyclable in you area</span>
+                            </button>
+                        </div>
+                        <img src="/img/milk01.png" alt="img">
+                        <div class="area-block">
+                            <span>£ 2.05</span>
+                        </div>
+                        <div class="card-count">
+                            <button id="myBtn">Add</button>
+                        </div>
+                    </div>
                     <div class="card card-blue">
                         <div class="card-title">
                             <h4 title="Semi Skimmed Low Fat Milk">Semi Skimmed Low Fat Milk</h4>
@@ -113,47 +133,14 @@
                             <button id="myBtn">Add</button>
                         </div>
                     </div>
-                    <div class="card card-blue">
-                        <div class="card-title">
-                            <h4 title="Semi Skimmed Low Fat Milk">Semi Skimmed Low Fat Milk</h4>
-                            <p>2,272 L / 4 Pints</p>
-                            <button>
-                                <img src="/img/Vector.png" alt="img">
-                                <span>recyclable in you area</span>
-                            </button>
-                        </div>
-                        <img src="/img/milk03.png" alt="img">
-                        <div class="area-block">
-                            <span>£ 2.05</span>
-                        </div>
-                        <div class="card-count">
-                            <button id="myBtn">Add</button>
-                        </div>
-                    </div>
-                    <div class="card card-blue">
-                        <div class="card-title">
-                            <h4 title="Semi Skimmed Low Fat Milk">Semi Skimmed Low Fat Milk</h4>
-                            <p>2,272 L / 4 Pints</p>
-                            <button>
-                                <img src="/img/Vector.png" alt="img">
-                                <span>recyclable in you area</span>
-                            </button>
-                        </div>
-                        <img src="/img/milk03.png" alt="img">
-                        <div class="area-block">
-                            <span>£ 2.05</span>
-                        </div>
-                        <div class="card-count">
-                            <button id="myBtn">Add</button>
-                        </div>
-                    </div>
+                    
                 </div>
             </main>
 
                 
 </div>
                 <footer>
-                    © Mysupermarket.com 2020 — 2021
+                    <div class="footer-container">© Mysupermarket.com 2020 — 2021</div>
                 </footer> 
 
                         <div id="myModal" class="modal">
@@ -162,20 +149,25 @@
                                 <div class="modal-text">
                                     <h3>Semi Skimmed Low Fat Milk</h3>
                                     <p class="pints">2,272 L / 4 Pints</p>
-                                    <button class="icon-aria">h</button>
+                                    <button>
+                                        <img src="/img/Vector.png" alt="img">
+                                        <span>recyclable in you area</span>
+                                    </button>
+                                    <p class="modal-paragraff">Attachment apartments in delightful by motionless it no. <br>And now she burst sir learn total. Hearing hearted shewing own ask. <br>Solicitude uncommonly use her motionless not collecting age. </p>
                                     <div class="price-add">
                                         <span>£  2.05</span>
                                         <button>Add</button>
-                                            <div class="modal-recycle">
-                                                <h5>How to recycle</h5>
-                                                <p>Attachment apartments in delightful by motionless it no.</p>
-                                                <p>And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. </p>
-                                            </div>
-                                        <span class="close">&times;</span>
                                     </div>
+                                        <div class="modal-recycle">
+                                            <span>How to recycle</span>
+                                            <p>Attachment apartments in delightful by motionless it no. <br>And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. </p>
+                                        </div>
+                                        <img class="close" src="/img/close.png" alt="close">
                                 </div>
                             </div>
                         </div>
+    
+                        <link rel="import" href="packaging-page.html">
 
     
     <script src="/script.js"></script>
